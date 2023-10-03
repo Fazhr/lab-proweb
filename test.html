@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--id selector-->
+    <p id="id1"></p>
+
+    <!--class selector-->
+    <p class="class1"></p>
+    <p class="class1"></p>
+    <p class="class1"></p>
+
+    <!--tag selector-->
+    <h1></h1>
+    <h1></h1>
+
+    <script>
+        
+        document.getElementById('id1').textContent = "Ayam Hasil ID";
+
+        let class1 = document.getElementsByClassName('class1');
+        for (let i = 0; i < class1.length; i++){
+            class1[i].textContent = "Ayam Hasil Class";
+        }
+
+        var h1 = document.getElementsByTagName('h1');
+        for (var i = 0; i < h1.length; i++){
+            h1[i].textContent = "Ayam Hasil Tag";
+        }
+    </script>
+</body>
+</html>
